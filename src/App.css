@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CU:wght@100..400&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: bisque;
+
+}
+hr{
+  float: left;
+  color: rgb(255, 178, 84);
+
+}
+button{
+  float: right;
+  margin-right: 15%;
+  color: black;
+  background-color: #d8d5d5;
+  border-radius: 2px;
+  border: 1px solid black;
+  box-shadow: inset;
+}
+#herosection {
+  font-family: "Playfair Display", serif;
+  display: block;
+  height:100vh;
+  width:100vw;
+  box-sizing:border-box;
+  overflow: hidden;
+  background-image: url('./pages/Assets/image.jpg'); /* Specify the path to your image */
+  background-size: cover; 
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+#hovertxtsection{
+  display: block;
+  height:100vh;
+  width:100vw;
+  box-sizing:border-box;
+  font-family: "Playfair Display", serif;
+}
+#shopsection{
+  display: block;
+  height:auto;
+  width:100vw;
+  box-sizing:border-box;
+  font-family: "Playfair Display", serif;
+  background-color: bisque;
+
+}
+.heropara{
+  margin-top: 10%;
+  margin-left: 2%;
+}
+.container {
+  display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 100vh; 
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.logo{
+  position: absolute;
+  top: 10px;
+  left: 10px; 
+  color: aliceblue;
+  font-family: "Playwrite CU", cursive;
+  text-decoration: none;
+}
+.bag {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  color: aliceblue;
+
+  
+}
+.profile {
+  position: absolute;
+  top: 10px;
+  right: 35px;
+  color: aliceblue;
+  
+}
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: aliceblue;
+  
+}
+nav{
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  
+  
+}
+nav a{
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-decoration: none;
+  margin-top: 10px;
+  color: aliceblue;
+}
+
+nav a:hover{
+  background-color: #00000050;
+  border-radius: 3px;
+  width:auto;
+  padding:5px;
+}
+
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+  
+}
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 60%;
+  padding: 30px;
+  -webkit-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.con2 {
+  
+  position: relative;
+  width: 70%;
+  max-width: 70%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.con2 img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  transition: transform .3s ease-in-out ;
+  
+}
+h3{
+  position: absolute;
+  top:0;
+  color: aliceblue;
+} 
+.con2 a{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: aliceblue;
+}
+.con2 p{
+  position: absolute; 
+  bottom: -100%; 
+  background: rgba(0, 0, 0, 0.205); 
+  color: #f1f1f1; 
+  width: 100%;
+  transition: bottom 0.3s ease-in; 
+  opacity:0;
+  box-sizing: border-box;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+
+  
+}
+.con2:hover{
+  transform: scale(0.8);
+  overflow: hidden;
+
+}
+.con2:hover p{
+  opacity: 1;
+  bottom: 0;
+  
+}
+
+
+.column img:hover{
+  -webkit-transform: scale(1);
+	transform: scale(1.4);
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
